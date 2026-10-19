@@ -1,0 +1,8 @@
+{
+  "builds": [
+    { "src": "validate.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/api/v1/validate/?", "dest": "validate.py" }
+  ]
+}
